@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@700&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    /* overflow: hidden; */
+}
+
+.main-container{
+    display: flex;
+    gap: 330px;
+
+}
+
+.gradient{
+    position: relative;
+    height: 100vh;
+
+    >img{
+        height: 100vh;
+        width: 30vw;
+    }
+}
+
+.frontcard{
+    position: absolute;
+    top: 50px;
+    left: 70px;
+
+    >img{
+        position: relative;
+        height: 240px;
+        width: 440px;
+        border-radius: 10px;
+
+    }
+}
+
+.circle-container{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.circle{
+    height: 47px;
+    width: 47px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 20px;
+    left: 20px;
+}
+
+.border-circle{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: linear-gradient(127.75deg, #623FF2 19.57%, #5E37EC 93.11%),
+    linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    border: 1.5px solid #fff;
+
+}
+
+.cardno-container{
+    position: absolute;
+    top: 130px;
+    left: 35px;
+    width: 100%;
+
+
+    >p{
+        color: #fff;
+        font-family: 'Inter', sans-serif;
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 31px;
+        letter-spacing: 0.18em;
+        text-align: left;
+
+    }
+    
+}
+
+.nameanddob{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 185px;
+    /* left: 35px; */
+
+    >p{
+        margin: 10px 35px;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 15px;
+        letter-spacing: 0.19em;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.backcard{
+    position: absolute;
+    border-radius: 10px;
+    height: 240px;
+    width: 440px;
+    top: 320px;
+    left: 160px;
+    background: linear-gradient(106.8deg, #FFFFFF 0%, #D9D9D9 103.94%);
+
+    .blackstrip{
+        height: 47px;
+        background-color: #000;
+        margin-top: 20px;
+    }
+
+    .graystrip{
+        display: flex;
+        align-items: center;
+        height: 34px;
+        background-color: #ADB6BF;
+        margin: 30px 40px 0;
+        padding: 0px 15px;
+        border-radius: 5px;
+        justify-content: flex-end;
+
+        >p{
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 16px;
+            letter-spacing: 0.235em;
+        }
+    }
+}
+
+
+.linescontainer{
+    display: flex;
+    flex-direction: column;
+    margin-top:30px ;
+}
+
+.dottedline{
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.longline,.smdline,.mdline,.smallline{
+    background-color: #AEB5BD;
+    height: 5px;
+    display: flex;
+    border-radius: 4px;
+}
+
+.longline{
+    width: 110px;
+}
+
+.smdline{
+    width:22px ;
+}
+
+.mdline{
+    width:51px ;
+}
+
+.smallline{
+    width: 9px;
+}
+
+
+
+
+
+.form-container{
+    box-sizing: border-box;
+    margin-top: 100px;
+    width: 400px;
+}
+
+.cardholder-name,.card-number,.expirybox,.cvv{
+    display: flex;
+    flex-direction: column;
+}
+
+.cvv-and-expiry{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 10px;
+}
+
+.expirybox{
+    width: 70%;
+}
+
+.expirydate{
+    display: flex;
+    gap: 5px;
+
+    >input{
+        width: 100%;
+    }
+
+}
+
+.cvv >input{
+        width: 100%;
+    }
+
+
+.btn{
+    width: 100%;
+    cursor: pointer;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: #fff;
+    background-color: #220930;
+    padding: 17px 0;
+    text-align: center;
+    border-radius: 6px;
+    border: none;
+    margin-top: 30px;
+}
+
+
+
+.input-box{
+    box-sizing: border-box;
+    height: 44px;
+    border-radius: 6px;
+    border: 1px solid #00000021;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0.125em;
+    /* margin-bottom: 30px; */
+    padding: 0 10px;
+}
+
+label{
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0.155em;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.special{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+span{
+    height: 12px;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #F81212;
+    margin-left: 3px;
+}
+
+.validmonth{
+    display: flex;
+    width: 100%;
+    gap: 33px;
+    
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
