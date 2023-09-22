@@ -57,6 +57,11 @@ const Card = () => {
         if(!formData.expiryYear || formData.expiryYear < new Date().getFullYear().toString().slice(-2)){
             formErrors.expiryYear = "Invalid Year"
         }
+
+        if(formData.expiryYear == new Date().getFullYear().toString().slice(-2) && formData.expiryMonth < new Date().getMonth()){
+            formErrors.expiryMonth = "Invalid Month"
+        }
+
         if(!formData.cvv){
             formErrors.cvv = "CVC must be Numeric"
         }
